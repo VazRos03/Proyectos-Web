@@ -1,0 +1,271 @@
+:root{
+    /*definiendo la paleta de colores*/
+    --blanco: #FFFFFF;
+    --oscuro: #212121;
+    --primario: #00b341;
+    --secundario: #00abfb;
+    --gris: #757575;
+}
+
+/* Globales*/
+html{
+    font-size: 62.6%;
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+}
+
+*,*:before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 16px;/* 1 rem = 10 px*/
+    font-family: 'Krub', sans-serif;
+    background-image: linear-gradient(to top, #DFE9F3 0%, var(--blanco) 100%);/*en esta sictuacion estamos haciendo un degradado de abajo hacia arriba, si quisieramos que fuera de arriba a abajo, usamos to bottom*/
+}
+
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.boton{
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 90%;
+    text-align: center;
+    border:none;
+}
+/*generando media query para el boton*/
+@media (min-width: 768px) {
+  .boton{
+        width: auto;
+  }
+}
+
+.boton:hover{
+    cursor: pointer;
+}
+
+.sombra{
+    /*usamos la aplicacion en css matinc*/
+    box-shadow: 0px 5px 15px 0px rgba(122,118,122,1);
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+/*tipografia basica*/
+h1{
+    font-size: 3.8rem;
+}
+
+h2{
+    font-size: 2.8rem;
+}
+
+h3{
+    font-size: 1.8rem;
+}
+
+h1,h2,h3{
+    text-align: center;
+}
+
+/*titulos*/
+.titulo span{
+    font-size: 2rem;
+}
+/* utilidades */
+.w-100{
+    width: 100%;
+}
+@media(min-width:768px){
+    .w-100{
+        width: auto;
+    }
+}
+
+.flex{
+    display: flex;
+}
+.alinear-derecha{
+    justify-content: flex-end;
+}
+
+/*navegacion principal*/
+.nav-bg{
+    background-color: var(--secundario);
+}
+
+.navegador-prin{
+    padding: 0.6rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+@media (min-width: 768px ) {
+    /*hereda todo lo del original pero con el media query, cambiara su comportamiento*/
+    .navegador-prin{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.navegador-prin a {
+    display: block;
+    text-align: center;
+    color: var(--blanco);
+    text-decoration: none; /*eliminara el formato de texto original de los enlaces*/
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem;
+}
+
+.navegador-prin a:hover{
+    background-color: var(--primario);
+    color: var(--oscuro);
+}
+
+/*program, es la imagen de fondo de nuestra section donde esta el boton de contacto y la*/
+.program{
+    background-image:url(program.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.contenido-program{
+    position: absolute;
+    background-color: rgb(0 0 0 / 50%);
+    width: 100%;
+    height: 100%;
+
+    /*centrado tanto horizontal como verticalmente*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido-program h2, .contenido-program p{
+    color: var(--blanco);
+}
+
+.contenido-program .ubicacion{
+    display: flex;
+    align-items: flex-end;
+}
+
+/*scroll snap
+.servicios, .navegador-prin{
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}*/
+
+/*servicios, usando grid*/
+/*desarrollo responsive*/
+@media (min-width: 768px ) {
+    .servicios{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; /**lo que hacemos es de que divida equitativamente entre 100% en fracciones para la cantidad de elemenetos que tenemos en el div de servicios*/
+        column-gap: 2rem;/*separacion de columnas*/
+    }
+}
+
+.servicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.servicio h3{
+    color: var(--secundario);
+    font-weight: normal;
+}
+
+.servicio p{
+    line-height: 2;
+    text-align: center;
+}
+
+.servicio .iconos{
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--primario);
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;/*alineacion vertical*/
+}
+
+/*formulario*/
+.formulario{
+    background-color: var(--gris);
+    width: min(60rem, 100%);/*utilizar el valor mas pequenio*/
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.formulario fieldset{
+    border: none;
+}
+
+.formulario legend{
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--primario);
+}
+
+@media(min-width:1rem){
+    .contenedor-campos{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto auto 20rem;
+        column-gap: 1rem;
+    }
+
+    .campos:nth-child(3), .campos:nth-child(4){
+        grid-column: 1 / 3;
+    }
+}
+.campos{
+    margin-bottom: 1rem;
+}
+
+.campos label{
+    color: var(--blanco);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: blocks;
+}
+
+.campos textarea{
+    height: 20rem;
+}
+.input-text{
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+
+/* footer*/
+.footer{
+    text-align: center;
+}
