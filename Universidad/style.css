@@ -1,0 +1,31 @@
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 16%, rgba(241,70,220,0.9977477477477478) 100%, rgba(0,212,255,1) 100%);
+}
+
+/* llamando a las clases para darle estilos a los textos en el index.html*/
+.texto{
+    color:aliceblue;
+    font-size: 5rem;
+    text-align: center;
+}
+
+.texto2{
+    color: aliceblue;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Times New Roman';
+    text-decoration: underline;
+}
+
+p{
+    color: aliceblue;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.imagen{
+    height: 20rem;
+    width: 20rem;
+    clip-path: inset(28px 33px 28px 68px);
+}
