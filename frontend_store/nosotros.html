@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VazRos Store</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!--en esta pagina estaremos usando BEM-->
+    <header class="header">
+        <a href="index.html">
+            <img class="header__logo" src="./img/logo.png" alt="logotipo">
+        </a>
+    </header>
+    <!--navegador-->
+    <nav class="navegacion">
+        <a class="navegacion__enlace" href="tienda.html">Tienda</a>
+        <a class="navegacion__enlace navegacion__enlace--activo" href="index.html">Nosotros</a>
+    </nav>
+
+    <!--aqui viene el contenido del sobre nosostros junto la imagen-->
+    <main class="contenedor">
+        <h1>Nosotros</h1>
+        <div class="nosotros">
+            <div class="nosotros__contenido">
+                <p>In varius egestas tortor rhoncus fringilla. Nullam ultrices ac nulla vitae volutpat. Vestibulum aliquam pulvinar mi et malesuada. Morbi fringilla augue vitae semper tempus. Sed semper fermentum quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis dapibus nulla et ante egestas aliquam. Curabitur congue scelerisque gravida. Etiam rhoncus sem magna, eu ullamcorper ipsum efficitur placerat. Praesent consequat placerat libero in lacinia. Vivamus rutrum purus lobortis dictum finibus. Praesent blandit ultricies lacus sit amet dapibus.</p>
+
+                <p>Etiam eu tincidunt magna. Donec id iaculis leo. Quisque nec tristique elit, at feugiat elit. Curabitur ac nisi at ante pellentesque imperdiet sit amet eget eros. Morbi feugiat cursus tempus. Nulla facilisis tellus.</p>
+
+            </div>
+            <img class="nosotros__imagen" src="./img/nosotros.jpg" alt="imagen_nosostros">
+        </div>
+    </main>
+
+    <!--seccion de iconos-->
+    <section class="contenedor comprar">
+        <h2 class="comprar__titulo">Por que compara con nosotros??</h2>
+        <div class="bloques">
+            <div class="bloque">
+                <img class="bloque__imagen" src="./img/icono_1.png" alt="icono 1">
+                <h3 class="bloque__titulo">El mejor Precio</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In iure consectetur voluptatem quasi vel amet assumenda</p>
+            </div><!--bloque 1-->
+
+            <div class="bloque">
+                <img class="bloque__imagen" src="./img/icono_2.png" alt="icono 2">
+                <h3 class="bloque__titulo">Para Devs</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In iure consectetur voluptatem quasi vel amet assumenda</p>
+            </div><!--bloque 2-->
+
+            <div class="bloque">
+                <img class="bloque__imagen" src="./img/icono_3.png" alt="icono 3">
+                <h3 class="bloque__titulo">Envios Gratis</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In iure consectetur voluptatem quasi vel amet assumenda</p>
+            </div><!--bloque 3-->
+
+            <div class="bloque">
+                <img class="bloque__imagen" src="./img/icono_4.png" alt="icono 4">
+                <h3 class="bloque__titulo">Envios Seguros</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In iure consectetur voluptatem quasi vel amet assumenda</p>
+            </div><!--bloque 4-->
+
+        </div><!--bloques-->
+    </section><!--Seccion-->
+
+
+    <!--footer-->
+    <footer class="footer">
+        <p class="footer__texto">Front End Store - Todos los derechos Reservados 2024.</p>
+    </footer>
+</body>
+</html>

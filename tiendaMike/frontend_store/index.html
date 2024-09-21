@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VazRos Store</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!--en esta pagina estaremos usando BEM-->
+    <header class="header">
+        <a href="index.html">
+            <img class="header__logo" src="./img/logo.png" alt="logotipo">
+        </a>
+    </header>
+    <div class="carrito">
+        <img class="carrito__imagen" src="./img/carrito.png" alt="">
+    </div>
+    <!--navegador-->
+    <nav class="navegacion">
+        <a class="navegacion__enlace " href="index.html">Tienda</a>
+        <a class="navegacion__enlace " href="nosotros.html">Nosotros</a>
+    </nav>
+
+    <!-- este es el contenedor donde estara el contenedor de nuestros productos-->
+    <main class="contenedor ">
+        <h1>Nuestros Productos</h1>
+        <!--este es el contenedor donde tenemos nuestros productos-->
+        <div class="grid">
+            <div class="producto">
+                <img class="producto__imagen" src="img/1.jpg" alt="imagen camisa">
+                <div class="producto__informacion">
+                    <p class="producto__nombre">VueJS</p>
+                    <p class="producto__precio">$25</p>
+                </div>
+
+                <form class="formulario">
+                    <input class="formulario__submit" type="submit" value="Agregar al carrito">
+                </form>
+            </div><!--fin de producto 1-->
+
+            <div class="producto">
+                <img class="producto__imagen" src="img/2.jpg" alt="imagen camisa">
+                <div class="producto__informacion">
+                    <p class="producto__nombre">AngularJS</p>
+                    <p class="producto__precio">$25</p>
+                </div>
+
+                <form class="formulario">
+                    <input class="formulario__submit" type="submit" value="Agregar al carrito">
+                </form>
+            </div><!--fin de producto 2-->
+
+            <div class="producto">
+                <img class="producto__imagen" src="img/3.jpg" alt="imagen camisa">
+                <div class="producto__informacion">
+                    <p class="producto__nombre">ReactJS</p>
+                    <p class="producto__precio">$25</p>
+                </div>
+
+                <form class="formulario">
+                    <input class="formulario__submit" type="submit" value="Agregar al carrito">
+                </form>
+            </div><!--fin de producto 3-->
+
+            <div class="producto">
+                <img class="producto__imagen" src="img/4.jpg" alt="imagen camisa">
+                <div class="producto__informacion">
+                    <p class="producto__nombre">Redux</p>
+                    <p class="producto__precio">$25</p>
+                </div>
+
+                <form class="formulario">
+                    <input class="formulario__submit" type="submit" value="Agregar al carrito">
+                </form>
+            </div><!--fin de producto 4-->
+
+            <div class="producto">
+                <img class="producto__imagen" src="img/5.jpg" alt="imagen camisa">
+                <div class="producto__informacion">
+                    <p class="producto__nombre">Node.js</p>
+                    <p class="producto__precio">$25</p>
+                </div>
+
+                <form class="formulario">
+                    <input class="formulario__submit" type="submit" value="Agregar al carrito">
+                </form>
+            </div><!--fin de producto 5-->
+
+            <div class="producto">
+                <img class="producto__imagen" src="img/6.jpg" alt="imagen camisa">
+                <div class="producto__informacion">
+                    <p class="producto__nombre">SASS</p>
+                    <p class="producto__precio">$25</p>
+                </div>
+
+                <form class="formulario">
+                    <input class="formulario__submit" type="submit" value="Agregar al carrito">
+                </form>
+            </div><!--fin de producto 6-->
+            <div class="producto">
+                <img class="producto__imagen" src="img/7.jpg" alt="imagen camisa">
+                <div class="producto__informacion">
+                    <p class="producto__nombre">HTML5</p>
+                    <p class="producto__precio">$25</p>
+                </div>
+
+                <form class="formulario">
+                    <input class="formulario__submit" type="submit" value="Agregar al carrito">
+                </form>
+            </div><!--fin de producto 7-->
+
+            <!--seccion para las imagenes graficas-->
+            <div class="grafico grafico--camisas">
+        </div><!--fin del contenedor donde tenemos nuestros productos-->
+    </main> <!--fin de nuestro contenedor donde tenemos el contenedor con nuestros productos/-->
+    <!--footer-->
+    <footer class="footer">
+        <p class="footer__texto">Front End Store - Todos los derechos Reservados 2024.</p>
+    </footer>
+</body>
+</html>

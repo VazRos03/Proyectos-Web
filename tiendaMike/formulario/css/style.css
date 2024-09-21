@@ -1,0 +1,29 @@
+body {
+    /* Degradado de verde a blanco */
+    background: linear-gradient(to right, #3cb371, #ffffff);
+    height: 100vh; /* Asegura que cubra toda la pantalla */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.formulario{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+}
+
+.formulario h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid white;
+}
+
+.formulario form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
